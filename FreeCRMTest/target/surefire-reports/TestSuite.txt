@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 4, Errors: 0, Skipped: 17, Time elapsed: 1.244 sec <<< FAILURE!
+setUp(com.crm.qa.testcases.FreeCrmTest)  Time elapsed: 0.907 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: D:\Users\naveenkhunteta\Downloads\chromedriver
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:40)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:98)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+	at com.crm.qa.testcases.FreeCrmTest.setUp(FreeCrmTest.java:24)
+
+setUp(com.crm.qa.testcases.ContactsPageTest)  Time elapsed: 0.909 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
+	at com.crm.qa.base.TestBase.initialization(TestBase.java:43)
+	at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:47)
+
+setUp(com.crm.qa.testcases.HomePageTest)  Time elapsed: 0.91 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
+	at com.crm.qa.base.TestBase.initialization(TestBase.java:43)
+	at com.crm.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
+
+setUp(com.crm.qa.testcases.LoginPageTest)  Time elapsed: 0.911 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
+	at com.crm.qa.base.TestBase.initialization(TestBase.java:43)
+	at com.crm.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:22)
+
